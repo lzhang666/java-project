@@ -1,0 +1,68 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R10.5 Events
+event object:/ a event object is an object that has listener methods
+event source:/ event source is the user-interface component, such as a button, that generates a particular event.
+event listener:/ event listener belongs to a class created by the application programmer.
+Its methods describe te action to be taken when an event occurs.
+
+
+R10.6 actionPerformed
+1/ the event source, such as a button-click, calls the actionPerformed method.
+2/ the call to actionPerformed method occurs when there is user input to the program.
+
+
+R10.11 Inner class and event-listeners
+1/ First, listener classes are usually short. Placing them as inner classes
+can avoid clustering up the remainder of the project. Second, inner classes can access
+instance variables and methods of surrounding class.
+2/ Yes, we can still implement event listeners without inner classes.
+In this case, the event listeners can receive the variable and methods
+of the event source as constructor or method arguments.
+
+
+R10.14 Object hierarchies
+1/ setWrapStyleWord
+2/ setEditable
+3/ setBackground
+
+
+R10.22 Graphic methods
+We can use random method to generate colors on 2 sides.
+1/ use random number generator: import java.util.Random
+2/ in the method, create a Random object: Random rand = new Random();
+3/ replace the two lines: g.setColor(Color.GREEN); and: g.setColor(Color.RED)
+with: g.setColor(new Color(rand.nextInt(255),rand.nextInt(255),rand.nextInt(255)));
+
+
+R11.2 Layout managers
+The layout manager allows for more sophisticated arrangements within the container.
+
+
+R11.11 ButtonGroup
+The buttons in the button group are mutually exclusive such that only one button can be selected at a time.
+This functionality is suitable for radio buttons.
+The check boxes, on the other hand, do not exclude each other.
+
+
+R11.19 Types of Events
+What is the difference between an ActionEvent and a MouseEvent?
+1/ An ActionEvent includes button clicks and timer ticks. It is invoked when the button push occurs.
+2/ An MouseEvent is more complex, it includes mousePressed, mouseReleased, mouseClicked, mouseEntered and mouseExited.
+It listens to the mouse operation constantly.
+
+R11.20 Events
+1/ An action event object carries information of a button click and the associated time stamp.
+2/ A mouse event object carries additional information of mouse button press-hold and release,
+and the coordinate information of the mouse cursor.
+
+R11.21 ActionListener versus MouseListener
+1/ ActionListener is used to handle one event which is the click of a button.
+2/ MouseListener can be used to track the states of the mouse operation, including mouse press-hold, release, click,
+and the position of the mouse cursor on screen.
+
+
+
+

@@ -1,0 +1,137 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R12.1 OO Analysis and Design
+1/ gather requirements
+2/ use CRC cards to find classes, responsibilities and collaborators
+3/ use UML diagrams to record class relationships
+4/ use javadoc to document method relationships
+5/ implement the program
+
+
+R12.2 OO Analysis and Design
+1/ nouns in the problem description are good candidates for classes
+2/ concepts from the problem domain are good candidates for classes
+
+
+R12.3 OO Analysis and Design
+Look for verbs in the task/problem description. They are good candidates for methods
+for the corresponding objects
+
+
+R12.8 Relationships
+1/
+class/ Coin
+responsibility/ has face value;
+                has name for the type of coin, i.e. quarter
+collaborator/
+2/
+class/ CashRegister
+responsibility/ has the payment amount required for the product;
+                receives the purchase amount offered by the customer;
+                returns the change if customer pays more amount than required
+collaborator/ Coin
+
+
+R12.9 CRC Quiz
+1/
+class/ Quiz
+responsibility/ has questions;
+                adds new questions;
+                presents questions included
+collaborator/ nil
+2/
+class/ Question
+responsibility/ has text as description;
+                has answer to the question;
+                displays question description;
+                checks if input correspond to the answer
+collaborator/ nil
+
+
+R12.10 UML Quiz
+/UML diagram see "R12_10 UML.png"
+
+
+R12.11 CRC Cards
+1/
+class/ FileIn
+responsibility/ has a ArrayList of Country objects;
+                opens and reads the file;
+                for each line insert read, insert the information into a Country object;
+                insert country object to ArrayList
+                compare and returns the Country object name of the largest population density
+collaborator/ Country
+2/
+class/ Country
+responsibility/ has a name;
+                has a population;
+                has area;
+                sets name;
+                sets population;
+                sets area;
+                computes population density = population/area
+collaborator/ nil
+
+3/ UML diagram see "R12_10 UML.png"
+
+4/ javadoc comments.
+
+//Country class that has the Country information
+public class Country{
+    public void setName(String name){
+    //set Country name
+    }
+    public void setPop(int population){
+    //set population
+    }
+    public void setArea(double area){
+    //set area
+    }
+    public String getName(String name){
+    //get name
+    }
+    public int getPop(int population){
+    //get population
+    }
+    public double getArea(double area){
+    //get area
+    }
+    public double getDensity(){
+    //compute density
+    }
+}
+
+
+//class that reads file and stores info. into Country ArrayList
+public class FileIn{
+    public void addCountry(Country country){
+    //reads file, one line at a time
+    //insert info. into a Country object
+    //add Country object to the ArrayList
+    }
+
+    //@return the name of country with max pop. density
+    public String nameMaxDensity(ArrayList<Country> countries){
+    //iterate through the ArrayList
+    //compare the population density
+    //return the Country name of the Max population density
+    }
+}
+
+
+
+R12.13 UML Diagram
+VendingMachine
+Product
+Coin
+
+
+R12.14 UML Diagram
+Employee
+Payroll
+
+
+R12.15 UML Diagram
+/UML diagram see "R12_15 UML.png"

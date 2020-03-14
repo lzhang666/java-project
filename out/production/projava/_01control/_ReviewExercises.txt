@@ -1,0 +1,107 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R1.5 The following are all benefits to using Java over machine code:
+1/ Java bytecode is platform independent and may be run on any system that has a JVM. This quality is known as portability.
+2/ Java JIT compilers can run efficient Java programs as fast or faster than machine code programs
+3/ Java is memory-managed. This reduces about 95% of runtime errors (mostly memory-related) as compared to unmanaged code.
+4/ Java was designed for networking and the Internet in mind; and it is generally safer than machine code
+5/ With the introduction of Java8, Java is now a declarative and functional programming language.
+
+
+R2.4 Translating math expressions to Java:
+1/ s = s_0 + v_0_t + 1/2 * g * Math.pow(t , 2)
+2/ FV = PV * Math.pow((1+ INT/100), YRS)
+3/ G = 4 * Math.pow(Math.PI, 2) * Math.pow(a, 3) /(Math(p, 2)*(m1 + m2))
+4/ c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2) - 2 * a * b * Math.cos(gamma))
+
+
+R2.7 Understanding integer operations, order of precedence, and integer division:
+a/ 8
+b/ 1
+c/ 17
+d/ 17.5
+e/ 17
+f/ 18
+
+
+R2.14 How the compiler interprets primitive values:
+2: interpreted as an integer
+2.0: interpreted as a double
+'2': interpreted as a character
+"2": interpreted as a string
+"2.0": interpreted a a string
+
+
+R2.17 Pseudocode understanding:
+01 read full name input as a string fullName
+02 initialize monogram as an empty string
+03 for i = 0, i < the length of string, i++
+04     if i = 0
+05         monogram += fullName[i]
+06     else if the character at index i of fullName = " "
+07         monogram += fullName[i+1]
+08 output monogram
+
+
+R2.22 More pseudocode - you do not need to draw a diagram for this question:
+01 names = "SunMonTueWedThuFriSat"
+02 dayNum = 4
+03 the starting position of the substring startPos = 4 * 3 = 12
+04 with the length of the substring = 3
+05 endPos = 12 + 3 = 15
+06 day = names.substring(12, 15) = "Wed"
+
+
+R3.19 Pseudocode for grade problem:
+Enter Score as an integer
+initialize Grade as an empty string
+if Score >= 90 and Score <= 100
+    Grade = "A"
+else if Score >= 80 and Score <= 89
+    Grade = "B"
+else if Score >= 70 and Score <= 79
+    Grade = "C"
+else if Score >= 60 and Score <= 69
+    Grade = "D"
+else if Score < 60
+    Grade = "F"
+output Grade
+
+
+R3.30 Boolean expressions:
+a/ false
+b/ true
+c/ true
+d/ true
+e/ false
+f/ false
+g/ false
+h/ true
+
+
+R4.12 Implementing loops:
+1/ while loop: while loop is used to repeat the loop body as long as a statement stays true
+
+2/ for loop: for loop is used when a variable runs from a starting point to an ending point with a constant increment or decrement
+
+3/ do loop: do loop is used when the loop body needs to be executed for at least once
+
+
+R4.14 Calendar problem
+01 print the header as string "Su  M  T  W Th  F Sa"
+02 print the spaces in the 1st date line as a string "          1  2  3  4"
+03 on the next line, for i=5, i<=31, i++
+04     if i < 10
+05         print single space string " " before the date
+06         print i as date
+07         if i == 4
+08              print new line character "\n"
+09         else
+10              print single space string " " after the date
+11     else
+12         if i==11 or i==18 or i==25
+13              print new line character "\n"
+14         else
+15              print single space as string " "

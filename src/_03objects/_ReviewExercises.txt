@@ -1,0 +1,66 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R8.1 Encapsulation
+1/ Encapsulation is the act of providing a public interface and hiding the implementation details.
+2/ Encapsulation is useful because it enables updates in the implementation without affecting users of a class.
+
+
+R8.4 Public interface
+1/ Public interface of a class is a collection of methods through which the objects of the class can be manipulated.
+2/ Public interface can be used by programmers. The implementation of a class is the hidden from the programmers.
+
+
+R8.7 Instance versus static
+1/ An instance method can access the instance variables of the object on which it acts.
+2/ Instance methods can only be called after an object of its class is created;
+static methods are methods in Java that can be called without creating an object of class.
+
+
+R8.8 Mutator and accessor
+1/ A mutator modifies the object on which it operates.
+2/ A accessor queries the object for some information without changing it.
+
+
+R8.9 Implicit parameter
+1/ The object on which an instance method is invoked is implicit parameter.
+2/ In Java, implicit parameter is not written in the declaration.
+The parameters listed in the method declaration is called explicit parameter.
+
+
+R8.10 Implicit parameter
+1/ An instance method has exactly one implicit parameter.
+2/ A static method has no implicit parameter.
+3/ An instance method can have zero or more implicit parameters.
+
+
+R8.12 Constructors
+1/ A class can have multiple constructors, which allows programmers to declare objects in different ways.
+2/ If the programmer does not supply any constructor for a class, the compiler automatically generates
+a constructor with no arguments and initializes all instance variables with their default values. Therefore, every class has at least one constructor.
+3/ If a class has more than one constructor, the compiler picks the constructor that matches the construction arguments.
+
+
+R8.16 Instance variables
+Declaring an instance variable as private means that this instance variable can only accessed by the method of the same class.
+An method can also be declare as private. In this case, the private method might serve as a helper method to other public methods.
+
+
+R8.19 The this reference
+In a method, the this reference refers to the implicit parameter.
+The this reference is not usually used. In some cases, the programmers use the this reference to indicate instance variables.
+Using this reference can make the program easier to read.
+
+
+R8.20 Zero, null, false, empty String
+What is the difference between the number zero,
+the null reference, the value false, and the empty string?
+1/ The number zero refers to a number type, such as byte, int, etc., of value 0.
+2/ The null reference refers to no object.
+3/ The value false refers to a false boolean value.
+4/ the empty string refers to a string of length 0.
+
+
+
+

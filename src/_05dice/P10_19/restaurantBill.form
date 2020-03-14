@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="_05dice.P10_19.restaurantBill">
+  <grid id="27dc6" binding="mPanel" layout-manager="GridLayoutManager" row-count="16" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="520" height="523"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="14a6d" class="javax.swing.JButton" binding="chicken">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Fried Chicken $10.00"/>
+        </properties>
+      </component>
+      <component id="a8849" class="javax.swing.JButton" binding="totalPrice">
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Get Bill"/>
+        </properties>
+      </component>
+      <component id="73f65" class="javax.swing.JLabel" binding="subLabel">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="64718" class="javax.swing.JButton" binding="fish">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Grilled Fish $11.59"/>
+        </properties>
+      </component>
+      <grid id="2e6c6" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="4cb8a" class="javax.swing.JTextField" binding="dishName">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="cc530" class="javax.swing.JTextField" binding="dishPrice">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="3474" class="javax.swing.JButton" binding="addButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="add"/>
+            </properties>
+          </component>
+          <component id="ba1c6" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Dish:"/>
+            </properties>
+          </component>
+          <component id="b92e2" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Price: $"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="cd19c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="320" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Subtotal: $"/>
+        </properties>
+      </component>
+      <component id="5e6d6" class="javax.swing.JLabel" binding="taxLabel">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="24a17" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="320" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Tax (10%): $"/>
+        </properties>
+      </component>
+      <component id="a7680" class="javax.swing.JLabel" binding="totLabel">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="d5226" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="320" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Total: $"/>
+        </properties>
+      </component>
+      <component id="408b" class="javax.swing.JLabel" binding="tipLabel">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0"/>
+        </properties>
+      </component>
+      <component id="e6cca" class="javax.swing.JButton" binding="pizza">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Pizza $8.99"/>
+        </properties>
+      </component>
+      <component id="a9832" class="javax.swing.JButton" binding="lobster">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Boston Lobster $23.99"/>
+        </properties>
+      </component>
+      <component id="713bd" class="javax.swing.JButton" binding="salad">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Greek Salad $4.89"/>
+        </properties>
+      </component>
+      <component id="950ed" class="javax.swing.JButton" binding="noodle">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Soup Noodle $6.85"/>
+        </properties>
+      </component>
+      <component id="fa664" class="javax.swing.JButton" binding="cake">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Cheese Cake $6.50"/>
+        </properties>
+      </component>
+      <component id="dbf44" class="javax.swing.JButton" binding="redWine">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Red Wine $5.87"/>
+        </properties>
+      </component>
+      <component id="f9ff" class="javax.swing.JButton" binding="ginAndTonic">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Gin and Tonic $7.99"/>
+        </properties>
+      </component>
+      <component id="f1f81" class="javax.swing.JButton" binding="beer">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="456" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Beer $5.99"/>
+        </properties>
+      </component>
+      <component id="3b081" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="320" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Suggested Tip (18%): $"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

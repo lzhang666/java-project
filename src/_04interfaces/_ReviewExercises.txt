@@ -1,0 +1,60 @@
+#########################################################################
+# Use this file to answer Review Exercises from the Big Java textbook
+#########################################################################
+
+R9.1 Superclass and subclass
+a/ Employee(superclass), Manager(subclass)
+b/ GraduateStudent(subclass), Student(superclass)
+c/ Person(superclass), Student(subclass)
+d/ Employee(superclass), Professor(subclass)
+e/ BankAccount(superclass), CheckingAccount(subclass)
+f/ Vehicle(superclass), Car(subclass)
+g/ Vehicle(superclass), Minivan(subclass)
+h/ Car(superclass), Minivan(subclass)
+i/ Truck(subclass), Vehicle(superclass)
+
+
+R9.2 superclass and subclass
+- A subclass inherits data and behavior from the superclass.
+- In this case, the Toaster, CarVacuum and TravelIron do not share similar behaviors.
+It is not useful to have a superclass if there is not a common behavior between the subclasses.
+
+
+R9.4 SavingsAccount
+From its superclass, the SavingsAccount class
+inherits:/ deposit and getBalance
+overrides:/ withdraw and monthEnd
+adds:/ setInterestRate
+
+
+R9.6 Sandwich
+a and d
+
+
+R9.7 Inheritance -use the UML diagram tool in IntelliJ and indicate to the grader where uml file is located
+See "R9_7 uml.png" under the _04interfaces directory
+
+
+R9.8 Inheritance -use the UML diagram tool in IntelliJ and indicate to the grader where uml file is located
+See "R9_8 uml.png" under the _04interfaces directory
+
+
+R9.9 Inheritance -use the UML diagram tool in IntelliJ and indicate to the grader where uml file is located
+See "R9_9 uml.png" under the _04interfaces directory
+
+
+R9.10 Casting
+- The object type cast such as (BankAccount) x gives the casted object access to instance methods of the class BankAccount.
+- The primitive type cast such as (int) x strips way the instance methods originally associated with the object.
+
+
+R9.11 instanceof operator
+a, b, d and e
+
+
+R9.14 Edible interface
+a and c
+
+
+
+
